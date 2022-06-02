@@ -108,3 +108,39 @@ calculator.minus(20, 20);
 calculator.multiplay(20, 3);
 calculator.divide(20, 20);
 calculator.power(2, 3);
+
+// Making Calculator with Return
+const cal = {
+  plus: function (a, b) {
+    return a + b;
+  },
+  minus: function (a, b) {
+    return a - b;
+  },
+  times: function (a, b) {
+    return a * b;
+  },
+  divide: function (a, b) {
+    return a / b;
+  },
+};
+
+// \d Line Break
+console.log("cal with 'return' \n1+4 = a" + cal.plus(1, 4));
+
+// parseInt() ---> string to number
+const age = parseInt(prompt("How old are you"));
+
+// isNaN() : Number--> false, String--> true
+console.log("Ist 'age' Not a Number? 'The answer' is " + isNaN(age));
+
+// AND = && , OR = ||
+
+// Conditionals "if, else if, else"
+if (age >= 19) {
+  console.log("You can drink wine.");
+} else if (age === 18) {
+  console.log("You are 18 years old.");
+} else {
+  console.log("You cannot drink wine.");
+}
